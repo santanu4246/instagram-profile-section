@@ -203,16 +203,32 @@ p{
     height: 100%;
     width: 100%;
 }
-
+.minilogo{
+    position: absolute;
+    /* left: 0px; */
+    opacity: 0;
+}
 @media (max-width: 1260px) {
+    .minilogo{
+        opacity: 1;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .miniLogoChotoBhai{
+        opacity: 1;
+    }
     .none{
        display: none;
     }
     .sidebar{
        width: 68px;
     }
-    .logo img{
-       display: none;
+    .logo .miniLogoChotoBhai{
+       opacity: 0;
     }
     .flex{
        margin-left: 1%;
