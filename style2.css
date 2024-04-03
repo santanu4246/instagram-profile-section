@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+.opacity{
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+}
+.main_content{
+    flex: 1;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+.logo{
+    height: 92px;
+    width: 220px;
+    padding: 1.5rem 0.75rem 1rem 0.75rem;
+    margin-top: 0.75rem;
+}
+.white{
+    filter: invert(100%);
+}
+.sidebar{
+    width: 17%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5rem 0.75rem 1.25rem 0.75rem ;
+    border-right: 1px solid rgb(36, 36, 36);
+}
+.options{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    transition: all 0.2s ease;
+}
+.options:hover{
+    background-color: #282828;
+    border-radius: 10px;
+}
+.options:hover img {
+    transform: scale(1.1); /* Scale the images within .options on hover */
+}
+.options p{
+    padding-left: 1rem;
+}
+.nav{
+    height: 713px;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+.minilogo{
+    position: absolute;
+    /* left: 0px; */
+    opacity: 0;
+}
+.stories{
+    display: flex;
+    gap: 15px;
+    margin-top: 1.75rem;
+}
+.stories .stories_icons img{
+    height: 67px;
+    width: 67px;
+    border-radius: 50%;
+    border: 2px solid #BF371F;
+    padding: 0.2rem;
+}
+.stories .stories_icons p{
+    font-size: small;
+    margin-top: 0.35rem;
+}
+.margin{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.stories_icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .post{
+    display: flex;
+}
+.content .post .post_logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.post{
+    display: flex;
+    align-items: center;
+    gap: 0.40rem;
+}
+.content{
+    padding-top: 2rem;
+}
+.content .between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 466px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 630px;
+    gap: 0.5rem;
+}
+.content .photo_post img{ 
+    width: 468px;
+    border-radius: 8px;
+}
+.space
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 466px;
+}
+.like_comment_share{
+    display: flex;
+    gap: 0.40rem;
+}
+.like:hover{
+    opacity: 0.7;
+}
+.line{
+    height: 1px;
+    background-color: rgb(96, 96, 96);
+    margin-top: 0.5rem;
+    width: 466px;
+}
+.follow{
+    color: rgb(0, 153, 255);
+    font-size: 14px;
+}
+.follow:hover{
+    cursor: pointer;
+   color:  white;
+   font-weight: 600;
+}
+.day,.dot{
+    opacity: 0.7;
+}
+@media (max-width: 1260px) {
+    .minilogo{
+        opacity: 1;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .miniLogoChotoBhai{
+        opacity: 1;
+    }
+    .none{
+       display: none;
+    }
+    .sidebar{
+       width: 68px;
+    }
+    .logo .miniLogoChotoBhai{
+       opacity: 0;
+    }
+    .margin{
+       margin-left: 1%;
+       margin-right: 1%;
+    }
+    }
+   
+    
+    
+    
+    
