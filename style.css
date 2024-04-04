@@ -88,7 +88,7 @@ p{
 }
 .profile_pic .pic{
     height: 161px;
-    width: 291px;
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,6 @@ p{
     display: flex;
     align-items: center;
     height: 32px;
-    width: 95px;
     padding: 0 1rem 0 1rem;
     background-color: rgb(75, 74, 74);
     border-radius: 8px;
@@ -243,4 +242,39 @@ p{
 .options a{
     text-decoration: none;
     color: white;
+}
+.col{
+    display: flex;
+    gap: 0.5rem;
+}
+.col_wrap{
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 908px){
+    .profile_sec{
+        padding-left: 0px;
+    }
+}
+@media (max-width: 765px){
+    .sidebar{
+        display: none;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Ad_tools{
+        width: 218px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 565px){
+    .followers-post-following{
+        display: none;
+    }
 }
