@@ -22,10 +22,12 @@
         <div class="left">
             <div class="left_top">
                 <img src="./Assets/assets (1).svg" alt="">
-                <div class="input">
-                    <div class="from"><input type="text" name="" id="" placeholder="Phone number, username, or email">
+                <form class="input" method="get">
+                    <div class="from"><input type="text" name="" id="input" placeholder="Phone number, username, or email">
                     </div>
-                    <div><input type="password" name="" id="" placeholder="Password"></div>
+                    <span class="username" style="color: red; font-size: small;"></span>
+                    <div><input type="password" name="" id="password" placeholder="Password"></div>
+                    <span class="pass" style="color: red; font-size: small;"></span>
                     <div class="login">
                         <button><a href="home.html" style="text-decoration: none; color: white;">Log in</a></button>
                     </div>
@@ -42,7 +44,7 @@
                     <div class="forgot_pass">
                         <p>Forgot password?</p>
                     </div>
-                </div>
+                </form>
 
             </div>
             <div class="left_bottom">
@@ -86,7 +88,7 @@
             </div>
         </footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
